@@ -32,7 +32,6 @@ TEST_RUNNER="redgreenunittest.django.runner.RedGreenDiscoverRunner"
 
 INSTALLED_APPS = [
     'store',
-    'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
