@@ -1,20 +1,17 @@
 # Django Associations
-
 Now that you have some familiarity with reading and validating records from the database it's time to explore **associations**. 
 
-In this challenge you'll be using the following django associations:
+In this challenge you'll be using the following Django associations:
 
-* `ForeignKey #for one to many associations`
-* `ManyToManyField #for many to may associations:`
-* `ManyToManyField with through #for adding additional fields to a join table`
+* ForeignKey (for one to many associations)
+* ManyToManyField (for many to may associations)
+* ManyToManyField with through (for adding additional fields to a join table)
 
 ## Model Attributes
-
-This challenge is focused on modeling the relationships between models, not the models themselves. For that reason unnecessary model attributes are not considered part of this challenge. For example an `Actor` model would likely have `first_name` and `last_name` columns as part of the `actors` table, but in this challenge you only need create the necessary `id` & foreign key columns.
+This challenge is focused on modeling the relationships between models, not the models themselves. For that reason, our tables will not have any columns except for associations. For example an `Actor` model would likely have `first_name` and `last_name` columns as part of the `actors` table, but in this challenge you only need create the necessary `id` & foreign key associations.
 
 
 ## Release 0: IMDB Example
-
 You will create simple schema for the website [IMDB](http://imdb.com) which catalogs movies and actors.
 
 This schema includes three models:
@@ -35,7 +32,7 @@ After you set up your models, you can run `python manage.py test`. If you get an
 
 
 ## Release 1: Medium
-Run `createdb medium`. After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
+Run `createdb medium`. After you set up your models run `python3 manage.py makemigrations` and then `python3 manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
 
 ### Models
 * Post
