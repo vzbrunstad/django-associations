@@ -4,15 +4,15 @@ from .models import *
 class AssociationTestCase(TestCase):
   def setUp(self):
     self.user          = User.objects.create()
-    self.post          = Post.objects.create()
+    self.post          = Post.objects.create(author=self.user)
     self.commenter_one = User.objects.create()
     self.commenter_two = User.objects.create()
-    self.comment_one   = Comment.objects.create(post=self.post, user=self.commenter_one)
-    self.comment_two   = Comment.objects.create(post=self.post, user=self.commenter_two)
+    self.comment_one   = Comment.objects.create(post=self.post, author=self.commenter_one)
+    self.comment_two   = Comment.objects.create(post=self.post, author=self.commenter_two)
 
   def test_01_author_of_post(self):
     """returns the author of the post"""
-    self.assertEqual(self.post.author, self.author)
+    self.assertEqual(self.post.author, self.user)
 
   def test_02_posts_comments(self):
     """returns the post's comments"""
