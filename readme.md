@@ -12,10 +12,9 @@ This challenge is focused on modeling the relationships between models, not the 
 
 
 ## Release 0: IMDB Example
-You will create simple schema for the website [IMDB](http://imdb.com) which catalogs movies and actors.
+You will create simple schema for the website [IMDB](http://imdb.com) which catalogs movies and actors. Inside the `imdb` folder, you have `imdb` as a project and `moviedb` is the app.
 
-This schema includes three models:
-
+This schema should account for three models:
 * Actor
 * Role
 * Movie
@@ -24,7 +23,11 @@ The models can be found in `moviedb/models.py`
 
 The `Role` model joins `Movie` and `Actor.` Via this join model, a movie has many actors and an actor can act in many movies.
 
-Create a virtual environment using the instructions from previous challenges, install Django, and then run `createdb imdb` to create the database. Then, set up your models with the appropriate associations. Use the [django documentation](https://docs.djangoproject.com/en/2.1/topics/db/examples/) to help you out. It is important to get comfortable reading through documentation.
+Create a virtual environment using the instructions from previous challenges at `django_associations`, install Django, and then run `createdb imdb` to create the database.
+
+
+
+Then, set up your models with the appropriate associations. Use the [django documentation](https://docs.djangoproject.com/en/2.1/topics/db/examples/) to help you out. It is important to get comfortable reading through documentation.
 
 After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass.
 
