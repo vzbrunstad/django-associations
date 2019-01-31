@@ -26,7 +26,7 @@ SECRET_KEY = 'p51h7h$2m%2n5)opws9djm^^b-b)39j3yna45(m!&01$ou6+bc'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+TEST_RUNNER="redgreenunittest.django.runner.RedGreenDiscoverRunner"
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
