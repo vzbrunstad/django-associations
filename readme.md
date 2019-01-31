@@ -27,16 +27,15 @@ The models can be found in `moviedb/models.py`
 
 The `Role` model joins `Movie` and `Actor.` Via this join model, a movie has many actors and an actor can act in many movies.
 
-Run `createdb imdb` to create the database. Then, set up your models with the appropriate associations. Use the [django documentation](https://docs.djangoproject.com/en/2.1/topics/db/examples/) to help you out. It is important to get comfortable reading through documentation.
+Create a virtual environment using the instructions from previous challenges, install Django, and then run `createdb imdb` to create the database. Then, set up your models with the appropriate associations. Use the [django documentation](https://docs.djangoproject.com/en/2.1/topics/db/examples/) to help you out. It is important to get comfortable reading through documentation.
 
-After you set up your models run `python3 manage.py makemigrations` and then `python3 manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass.
+After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass.
 
-After you set up your models, you can run `python3 manage.py test`. If you get any error messages, let them guide you toward a solution. 
+After you set up your models, you can run `python manage.py test`. If you get any error messages, let them guide you toward a solution. 
 
 
 ## Release 1: Medium
-
-Run `createdb medium`. After you set up your models run `python3 manage.py makemigrations` and then `python3 manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
+Run `createdb medium`. After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
 
 ### Models
 * Post
@@ -57,7 +56,7 @@ comment.post
 
 ## Release 2: Amazon
 
-Run `createdb amazon`. After you set up your models run `python3 manage.py makemigrations` and then `python3 manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
+Run `createdb amazon`. After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
 
 ### Models
 * Shop
@@ -82,7 +81,7 @@ user.shop # if this user owns a shop, returns the shop. For most users this woul
 
 ## Release 3: Uber Eats
 
-Run `createdb uber_eats`. After you set up your models run `python3 manage.py makemigrations` and then `python3 manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
+Run `createdb uber_eats`. After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
 
 ### Models
 * Order
