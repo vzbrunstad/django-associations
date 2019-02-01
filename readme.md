@@ -99,3 +99,4 @@ Run `createdb grubhub`. After you set up your models run `python manage.py makem
 - An order_food_item belongs to an order
 - A food item has many order_food_items
 - An order_food_item belongs to a food_item
+- And finally if you have set up your associations correctly a user should have many food items through orders. See the final test. 
