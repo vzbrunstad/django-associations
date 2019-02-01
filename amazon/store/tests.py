@@ -8,7 +8,7 @@ class AssociationTestCase(TestCase):
     self.shop       = Shop.objects.create(owner=self.shop_owner)
     self.product    = Product.objects.create(shop=self.shop)
     self.user       = User.objects.create()
-    self.review     = Review.objects.create(product=self.product, reviewer=self.user)
+    self.review     = Review.objects.create(product=self.product, user=self.user)
     
   def test_01_owner_of_shop(self):
     """returns the owner of the shop"""
@@ -28,4 +28,4 @@ class AssociationTestCase(TestCase):
 
   def test_05_review_reviewer(self):
     """returns the review's author"""
-    self.assertEqual(self.review.reviewer, self.user)
+    self.assertEqual(self.review.user, self.user)
