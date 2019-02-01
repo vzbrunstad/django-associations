@@ -79,34 +79,23 @@ user.reviewed_products
 user.shop # if this user owns a shop, returns the shop. For most users this would return nil.
 ```
 
-## Release 3: Uber Eats
+## Release 3: Grubhub
 
-Run `createdb uber_eats`. After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
+Run `createdb grubhub`. After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
 
-### Models
-* Order
-* OrderItem (a join model that links orders and menu items)
-* MenuItem (e.g. burrito or cesar salad)
-* User (customers)
-* Driver (employees of Uber Eats)
+### Models (a.k.a. Tables)
+* Users
+* Orders 
+* Restaurants
+* FoodItems 
+* OrderFoodItems
 
-
-### Association Methods
-```ruby
-order.order_items
-order.menu_items
-order.driver
-order.customer # returns a User
-
-driver.orders
-driver.customers # returns the Users they are delivering orders to
-
-order_item.order
-order_item.menu_item
-
-menu_item.orders # all the orders this MenuItem was featured on
-
-user.orders
-user.order_items
-```
-
+### Associations
+- A user has many orders
+- An order belongs to a user
+- A restaurant has many orders
+- An order belongs to a restaurant
+- An order has many order_food_items
+- An order_food_item belongs to an order
+- A food item has many order_food_items
+- An order_food_item belongs to a food_item
