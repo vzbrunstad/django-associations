@@ -1,16 +1,16 @@
 from django.db import models
 
-class Driver(models.Model):
-  
+class User(models.Model):
 
-class MenuItem(models.Model):
-  
 
-class OrderItem(models.Model):
-  
+class Restaurant(models.Model):
+
 
 class Order(models.Model):
-  
 
-class User(models.Model):
-  
+
+class FoodItem(models.Model):
+
+
+class OrderFoodItem(models.Model):
+
