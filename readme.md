@@ -3,8 +3,9 @@ Now that you have some familiarity with reading and validating records from the 
 
 In this challenge you'll be using the following Django associations:
 
-* ForeignKey (for one to many associations)
-* ManyToManyField (for many to may associations)
+* ForeignKey (for one to many / many to one associations)
+* ForeignKey.related_name (how one references the many)
+* ManyToManyField (for many to many associations)
 * ManyToManyField with through (for adding additional fields to a join table)
 
 ## Model Attributes
