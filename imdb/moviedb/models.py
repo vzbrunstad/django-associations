@@ -1,9 +1,9 @@
 from django.db import models
 
-class Movie(models.Model):
-
-
 class Actor(models.Model):
+    pass
 
-
+class Movie(models.Model):
+    pass
 class Role(models.Model):
+    pass
