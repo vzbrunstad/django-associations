@@ -30,7 +30,7 @@ Create a virtual environment using the instructions from previous challenges at 
 
 Then, set up your models with the appropriate associations. Use the [django documentation](https://docs.djangoproject.com/en/2.1/topics/db/examples/) to help you out. It is important to get comfortable reading through documentation.
 
-After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass.
+After you set up your models run `python manage.py makemigrations` and then `python manage.py migrate`. If you make alterations to your models you may have to rerun these two commands (or even delete your migrations folder) to update your database and get the tests to pass.
 
 After you set up your models, you can run `python manage.py test`. If you get any error messages, let them guide you toward a solution. 
 
