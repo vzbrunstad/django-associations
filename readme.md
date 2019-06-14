@@ -36,7 +36,7 @@ After you set up your models, you can run `python manage.py test`. If you get an
 
 
 ## Release 1: Medium
-Run `createdb medium`. After you set up your models run `python3 manage.py makemigrations` and then `python3 manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
+Run `createdb medium`. After you set up your models run `python3 manage.py makemigrations <appname>` and then `python3 manage.py migrate`. If you make alterations to your models you may have to rerun these two commands to update your database and get the tests to pass. 
 
 ### Models
 * Post
