@@ -1,9 +1,3 @@
 from django.db import models
 
-class Actor(models.Model):
-    pass
-
-class Movie(models.Model):
-    pass
-class Role(models.Model):
-    pass
+# Create your models here.
